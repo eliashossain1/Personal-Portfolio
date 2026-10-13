@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elias Hossain | Business Development & Operations Specialist</title>
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --bg-color: #212428;
+      --card-bg: #212428;
+      --card-gradient: linear-gradient(145deg, #1e2024, #23272b);
+      --card-hover-gradient: linear-gradient(145deg, #24272c, #1a1c20);
+      --box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+      --box-shadow-hover: 10px 10px 19px #16181b, -10px -10px 19px #2c3035;
+      --box-shadow-inset: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #2a2e33;
+      --primary: #ff014f;
+      --primary-hover: #d10041;
+      --text-main: #c4cfde;
+      --text-heading: #ffffff;
+      --text-muted: #878e99;
+      --border-color: rgba(255, 255, 255, 0.05);
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header & Navigation */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgba(33, 36, 40, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 16px 0;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text-heading);
+      letter-spacing: 1px;
+    }
+    .logo span {
+      color: var(--primary);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+      align-items: center;
+    }
+
+    nav ul li a {
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: var(--transition);
+    }
+
+    nav ul li a:hover {
+      color: var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .btn-custom {
+      padding: 10px 20px;
+      background: var(--card-gradient);
+      box-shadow: var(--box-shadow);
+      border-radius: 6px;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-custom:hover {
+      background: var(--primary);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .btn-login {
+      color: var(--text-heading);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 90px 0 70px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero-subtitle {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--text-muted);
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .hero-title {
+      font-size: 46px;
+      font-weight: 800;
+      color: var(--text-heading);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero-title span {
+      color: var(--primary);
+    }
+
+    .hero-desc {
+      font-size: 15px;
+      color: var(--text-main);
+      margin-bottom: 30px;
+    }
+
+    .social-contact-strip {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .sub-title-small {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 12px;
+    }
+
+    .icon-box {
+      width: 50px;
+      height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--card-gradient);
+      box-shadow: var(--box-shadow);
+      border-radius: 6px;
+      color: var(--text-main);
+      font-size: 16px;
+      transition: var(--transition);
+    }
+
+    .icon-box:hover {
+      background: var(--card-hover-gradient);
+      color: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    /* Hero Profile Photo Card */
+    .hero-card {
+      background: var(--card-gradient);
+      box-shadow: var(--box-shadow);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-image-wrap {
+      width: 100%;
+      height: 420px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #181a1d;
+      box-shadow: var(--box-shadow-inset);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transition: var(--transition);
+    }
+
+    .hero-image-wrap img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Section Headers */
+    .section-head {
+      text-align: center;
+      margin: 80px 0 50px;
+    }
+
+    .section-head .sub {
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .section-head .title {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--text-heading);
+    }
+
+    /* Competencies Cards */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-bottom: 70px;
+    }
+
+    .card {
+      background: var(--card-gradient);
+      box-shadow: var(--box-shadow);
+      border-radius: 12px;
+      padding: 30px;
+      transition: var(--transition);
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--box-shadow-hover);
+    }
+
+    .card-icon {
+      font-size: 32px;
+      color: var(--primary);
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--text-heading);
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    /* Resume Section */
+    .resume-tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 45px;
+      background: var(--card-gradient);
+      box-shadow: var(--box-shadow);
+      border-radius: 10px;
+      padding: 6px;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tab-btn {
+      flex: 1;
+      padding: 13px;
+      border: none;
+      background: transparent;
+      color: var(--text-heading);
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .tab-btn.active {
+      background: var(--bg-color);
+      color: var(--primary);
+      box-shadow: var(--box-shadow);
+    }
+
+    .tab-pane {
+      display: none;
+    }
+    .tab-pane.active {
+      display: block;
+    }
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      border-left: 4px solid #181a1d;
+      padding-left: 28px;
+      margin-left: 15px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 35px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -36px;
+      top: 6px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--bg-color);
+      border: 4px solid #181a1d;
+      transition: var(--transition);
+    }
+
+    .timeline-item:hover::before {
+      background: var(--primary);
+    }
+
+    .timeline-content {
+      background: var(--card-gradient);
+      box-shadow: var(--box-shadow);
+      padding: 26px 30px;
+      border-radius: 10px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .timeline-content:hover {
+      box-shadow: var(--box-shadow-hover);
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .timeline-header h4 {
+      font-size: 19px;
+      color: var(--text-heading);
+      font-weight: 600;
+    }
+
+    .badge {
+      background: rgba(255, 1, 79, 0.12);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .timeline-company {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    .timeline-bullets {
+      padding-left: 18px;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    .timeline-bullets li {
+      margin-bottom: 7px;
+    }
+
+    .crud-item-btns {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: none;
+      gap: 8px;
+    }
+
+    .body-admin-logged-in .crud-item-btns {
+      display: flex;
+    }
+
+    .btn-action-small {
+      background: #191b1e;
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action-small.btn-del:hover {
+      background: #e63946;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: var(--card-gradient);
+      box-shadow: var(--box-shadow);
+      padding: 24px;
+      border-radius: 10px;
+      border-left: 3px solid var(--primary);
+    }
+
+    .skill-card h4 {
+      font-size: 16px;
+      color: var(--text-heading);
+      margin-bottom: 12px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      background: #191b1e;
+      color: var(--text-main);
+      font-size: 12px;
+      padding: 5px 12px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Contact Section */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 40px;
+      margin-bottom: 80px;
+    }
+
+    .contact-card, .form-card {
+      background: var(--card-gradient);
+      box-shadow: var(--box-shadow);
+      border-radius: 12px;
+      padding: 35px;
+    }
+
+    .contact-card h3 {
+      font-size: 24px;
+      color: var(--text-heading);
+      margin-bottom: 8px;
+    }
+
+    .contact-info-list {
+      margin: 25px 0;
+      list-style: none;
+    }
+
+    .contact-info-list li {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 15px;
+    }
+
+    .contact-info-list li i {
+      color: var(--primary);
+      font-size: 18px;
+      width: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+      color: var(--text-muted);
+    }
+
+    .form-control {
+      width: 100%;
+      background: #191b1e;
+      border: 2px solid #191b1e;
+      border-radius: 6px;
+      padding: 13px;
+      color: var(--text-heading);
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      border-color: var(--primary);
+      box-shadow: var(--box-shadow-inset);
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 30px 0;
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* Admin Bar & Modals */
+    .admin-bar {
+      display: none;
+      background: #141618;
+      border-bottom: 2px solid var(--primary);
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10000;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .body-admin-logged-in .admin-bar {
+      display: flex;
+    }
+
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(5px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 11000;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: #212428;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: var(--box-shadow);
+      border-radius: 12px;
+      width: 90%;
+      max-width: 580px;
+      padding: 35px;
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      font-size: 22px;
+      color: var(--text-muted);
+      cursor: pointer;
+      border: none;
+      background: transparent;
+    }
+
+    .modal-title {
+      font-size: 20px;
+      color: var(--text-heading);
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 10px;
+    }
+
+    .preview-box {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .preview-box img {
+      width: 70px;
+      height: 70px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid var(--primary);
+    }
+
+    @media (max-width: 991px) {
+      .hero-grid, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-image-wrap {
+        height: 380px;
+      }
+      .hero-title {
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+      .hero {
+        padding: 50px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Admin Bar when logged in -->
+  <div class="admin-bar" id="adminBar">
+    <div>
+      <span style="color: #00ff88; font-weight: 600;"><i class="fas fa-check-circle"></i> Admin Mode Logged In</span>
+      <span style="margin-left: 15px; color: var(--text-muted);">Manage your site info, profile photo, and experiences freely.</span>
+    </div>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+      <button class="btn-custom" onclick="openProfileModal()"><i class="fas fa-user-edit"></i> Edit Bio & Photo</button>
+      <button class="btn-custom" onclick="openAddJobModal()"><i class="fas fa-plus"></i> Add New Job</button>
+      <button class="btn-custom" onclick="openCredsModal()"><i class="fas fa-key"></i> Change Login Info</button>
+      <button class="btn-custom" style="color: #ff4d4d;" onclick="logoutAdmin()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-wrapper">
+      <div class="logo">ELIAS<span>.</span></div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#resume">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="#contact" class="btn-custom">Hire Me</a>
+        <button class="btn-custom btn-login" id="loginBtn" onclick="openLoginModal()"><i class="fas fa-lock"></i> Admin Login</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container hero-grid">
+      <div>
+        <span class="hero-subtitle">WELCOME TO MY OFFICIAL PORTFOLIO</span>
+        <h1 class="hero-title">Hi, I'm <span id="displayHeroName">Elias Hossain</span><br><span id="displayHeroTitle" style="font-size: 32px; font-weight: 600; color: #fff;">Business Development & Operations Specialist</span></h1>
+        <p class="hero-desc" id="displayHeroSummary">
+          Business development and operations professional with 10+ years of experience across sales, retail operations, inventory management, data management, technical support, administration, and accounts. Currently focused on business development for education technology and digital solutions, including client acquisition, relationship management, product demonstrations, proposals, onboarding, and customer support. Strong background in SAP/EPS, MS Excel, Google Sheets, ERP, reporting, data quality, team supervision, and process coordination. Known for accuracy, client-focused communication, operational discipline, and effective cross-functional coordination.
+        </p>
+
+        <div class="social-contact-strip">
+          <div>
+            <div class="sub-title-small">CONNECT WITH ME</div>
+            <div class="social-icons">
+              <a href="https://linkedin.com" target="_blank" class="icon-box" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:d029elias@gmail.com" id="mailLink" class="icon-box" title="Email"><i class="fas fa-envelope"></i></a>
+              <a href="tel:+8801755122965" id="phoneLink" class="icon-box" title="Call"><i class="fas fa-phone"></i></a>
+            </div>
+          </div>
+          <div>
+            <div class="sub-title-small">NATIVE DISTRICT & REGION</div>
+            <div style="font-weight: 500; font-size: 15px; color: var(--text-heading); padding-top: 8px;" id="displayLocation">
+              <i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 6px;"></i> Rajbari / Faridpur / Dhaka
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Profile Card with user's photo -->
+      <div class="hero-card">
+        <div class="hero-image-wrap">
+          <img id="profilePhoto" src="Elias Hossain 2021.jpg" alt="Elias Hossain" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80';" />
+        </div>
+        <h3 style="color: #fff; margin-top: 20px;" id="displayNameCard">Elias Hossain</h3>
+        <p style="color: var(--primary); font-size: 14px; font-weight: 500;" id="displayRoleCard">Business Development Officer @ Dynamic Host BD</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competencies -->
+  <section id="features" class="container">
+    <div class="section-head">
+      <span class="sub">CORE COMPETENCIES</span>
+      <h2 class="title">What I Excel At</h2>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+        <h3>EdTech & EMS Solutions</h3>
+        <p>Expert in Education Management Software (EMS/ERP), school websites, online result publishing, smart attendance systems, and school fee payment solutions.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>B2B Business Development</h3>
+        <p>10+ years spearheading lead generation, client visits, high-conversion product demonstrations, technical proposal preparation, and client onboarding.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-cubes"></i></div>
+        <h3>Enterprise SAP & EPS Management</h3>
+        <p>Managing extensive point of sales (POS), database integrity checks, stock movement reconciliation, and defect return workflows.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-boxes-packing"></i></div>
+        <h3>Retail & Inventory Operations</h3>
+        <p>Managing large-scale back-store inventory, vendor coordination, procurement, multi-outlet daily retail workflows, and audit control.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+        <h3>Accounts & Administration</h3>
+        <p>Financial ledger verification, monthly salary sheet generation, day-to-day expenditure audits, and organizational team supervision.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-user-shield"></i></div>
+        <h3>Technical Support & Data Quality</h3>
+        <p>Bio-enrollment workstation configuration, database quality audits, team training, and comprehensive helpdesk administration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="container">
+    <div class="section-head">
+      <span class="sub">10+ YEARS OF EXPERTISE</span>
+      <h2 class="title">Experience & Education</h2>
+    </div>
+
+    <div class="resume-tabs">
+      <button class="tab-btn active" onclick="openTab(event, 'experienceTab')">All Job Experiences</button>
+      <button class="tab-btn" onclick="openTab(event, 'educationTab')">Education & Certifications</button>
+      <button class="tab-btn" onclick="openTab(event, 'skillsTab')">Professional Skills</button>
+    </div>
+
+    <!-- Tab 1: Experience with full responsibilities & dynamic CRUD -->
+    <div id="experienceTab" class="tab-pane active">
+      <div class="timeline" id="experienceTimeline">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </div>
+
+    <!-- Tab 2: Education -->
+    <div id="educationTab" class="tab-pane">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h4>Master of Arts (MA) in Philosophy</h4>
+              <span class="badge">Passing Year: 2020</span>
+            </div>
+            <div class="timeline-company">Dhaka College, University of Dhaka</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h4>Bachelor of Arts (BA) in Philosophy</h4>
+              <span class="badge">Passing Year: 2017</span>
+            </div>
+            <div class="timeline-company">Dhaka College, University of Dhaka</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h4>Professional Government & Industry Certifications</h4>
+              <span class="badge">Certified</span>
+            </div>
+            <ul class="timeline-bullets" style="margin-top: 10px;">
+              <li><strong>National Skill Standard Basic (360 hrs)</strong> – Bangladesh Technical Education Board (BTEB)</li>
+              <li><strong>Advance Excel & Data Management</strong> – Banglalink Digital Communications Ltd</li>
+              <li><strong>Technical Support Specialist Certification</strong> – Bangladesh Election Commission</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 3: Skills -->
+    <div id="skillsTab" class="tab-pane">
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Business Development & Sales</h4>
+          <div class="skill-tags">
+            <span class="tag">B2B Sales</span>
+            <span class="tag">Lead Generation</span>
+            <span class="tag">Client Relationship Management</span>
+            <span class="tag">Field Marketing</span>
+            <span class="tag">Product Demonstrations</span>
+            <span class="tag">Proposal Preparation</span>
+            <span class="tag">Customer Onboarding</span>
+            <span class="tag">Sales Reporting</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4>Software & Digital Tools</h4>
+          <div class="skill-tags">
+            <span class="tag">SAP</span>
+            <span class="tag">EPS</span>
+            <span class="tag">ERP Systems</span>
+            <span class="tag">Advanced MS Excel</span>
+            <span class="tag">Google Sheets</span>
+            <span class="tag">WordPress</span>
+            <span class="tag">MS Word</span>
+            <span class="tag">Canva</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4>Operations & Retail Management</h4>
+          <div class="skill-tags">
+            <span class="tag">Inventory & Stock Control</span>
+            <span class="tag">Procurement</span>
+            <span class="tag">Team Supervision</span>
+            <span class="tag">Financial & Operational Reporting</span>
+            <span class="tag">Auditing & Reconciliation</span>
+            <span class="tag">Cash Handling</span>
+            <span class="tag">Customer Service</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4>Languages</h4>
+          <div class="skill-tags">
+            <span class="tag">Bangla (Native / Bilingual)</span>
+            <span class="tag">English (Professional Working Proficiency)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <div class="section-head">
+      <span class="sub">GET IN TOUCH</span>
+      <h2 class="title">Contact Information</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3 id="displayContactName">Elias Hossain</h3>
+        <p style="color: var(--primary); font-weight: 500; margin-bottom: 12px;">Available for Institutional & Corporate Opportunities</p>
+        
+        <ul class="contact-info-list">
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            <span id="displayPhone">+8801755122965</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span id="displayEmail">d029elias@gmail.com</span>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span id="displayAddress">Village: Shawrail, P.O: Bishoi Shawrail, P.S: Kalukhali, Dist: Rajbari</span>
+          </li>
+        </ul>
+
+        <div class="sub-title-small" style="margin-top: 30px;">ACADEMIC REFERENCE</div>
+        <div style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; font-size: 13px;">
+          <strong style="color: #fff;">Shawon Biswas</strong><br>
+          Lecturer, Physics Discipline, Khulna University<br>
+          <i class="fas fa-envelope" style="color: var(--primary);"></i> shawon44@phy.ku.ac.bd | <i class="fas fa-phone" style="color: var(--primary);"></i> +8801767-634624
+        </div>
+      </div>
+
+      <div class="form-card">
+        <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" class="form-control" placeholder="e.g. Principal / Managing Director" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" class="form-control" placeholder="+88017..." />
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" class="form-control" placeholder="name@domain.com" required />
+          </div>
+          <div class="form-group">
+            <label>Subject / Proposal Inquiry</label>
+            <textarea class="form-control" rows="4" placeholder="Discuss software demo, partnership or recruitment..." required></textarea>
+          </div>
+          <button type="submit" class="btn-custom" style="width: 100%; justify-content: center;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clean Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Elias Hossain. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ==================== ADMIN MODALS ==================== -->
+  
+  <!-- 1. Clean Admin Login Modal -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('loginModal')">&times;</button>
+      <h3 class="modal-title"><i class="fas fa-user-lock" style="color: var(--primary);"></i> Admin Login</h3>
+      <form onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" id="adminUser" class="form-control" placeholder="Username" required />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="adminPass" class="form-control" placeholder="••••••••" required />
+        </div>
+        <button type="submit" class="btn-custom" style="width: 100%; justify-content: center; margin-top: 10px;">Login to Backend</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Profile & Photo Edit Modal with Compressed Instant Upload -->
+  <div class="modal-overlay" id="profileModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('profileModal')">&times;</button>
+      <h3 class="modal-title"><i class="fas fa-id-badge" style="color: var(--primary);"></i> Edit Profile & Photo</h3>
+      <form onsubmit="saveProfileChanges(event)">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="inputName" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label>Designation / Role Title</label>
+          <input type="text" id="inputRole" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="text" id="inputPhone" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="inputEmail" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label>Village & District Address</label>
+          <input type="text" id="inputAddress" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label>Professional Summary</label>
+          <textarea id="inputSummary" rows="5" class="form-control" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Upload New Photo (Select from Device / Computer)</label>
+          <input type="file" id="inputPhotoFile" class="form-control" accept="image/*" onchange="handleImageCompressAndLoad(event)" />
+          <div class="preview-box" id="previewBox" style="display: none; margin-top: 10px;">
+            <img id="previewImgElement" src="" alt="Selected Photo Preview" />
+            <span style="font-size: 13px; color: #00ff88;"><i class="fas fa-check"></i> Image processed & ready to update!</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Or Photo URL / File Path</label>
+          <input type="text" id="inputPhotoUrl" class="form-control" placeholder="e.g. Elias Hossain 2021.jpg" />
+        </div>
+        <button type="submit" class="btn-custom" style="width: 100%; justify-content: center; margin-top: 10px;">Update Information</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 3. Add / Edit Experience Modal -->
+  <div class="modal-overlay" id="jobModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('jobModal')">&times;</button>
+      <h3 class="modal-title" id="jobModalTitle"><i class="fas fa-briefcase" style="color: var(--primary);"></i> Add Experience</h3>
+      <form onsubmit="saveJobChanges(event)">
+        <input type="hidden" id="jobEditIndex" value="-1" />
+        <div class="form-group">
+          <label>Job Designation</label>
+          <input type="text" id="jobDesignation" class="form-control" placeholder="e.g. Business Development Officer" required />
+        </div>
+        <div class="form-group">
+          <label>Company Name & Location</label>
+          <input type="text" id="jobCompany" class="form-control" placeholder="e.g. Dynamic Host BD | Faridpur, Bangladesh" required />
+        </div>
+        <div class="form-group">
+          <label>Tenure / Duration</label>
+          <input type="text" id="jobDuration" class="form-control" placeholder="e.g. July 2026 – Present" required />
+        </div>
+        <div class="form-group">
+          <label>Job Responsibilities (Protiti line alada bhabe likhun)</label>
+          <textarea id="jobResponsibilities" rows="6" class="form-control" placeholder="● Develop and maintain relations...&#10;● Lead EMS software demo..." required></textarea>
+        </div>
+        <button type="submit" class="btn-custom" style="width: 100%; justify-content: center;">Save Experience</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 4. Change Username & Password Modal -->
+  <div class="modal-overlay" id="credsModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('credsModal')">&times;</button>
+      <h3 class="modal-title"><i class="fas fa-key" style="color: var(--primary);"></i> Change Admin Credentials</h3>
+      <form onsubmit="saveCredentials(event)">
+        <div class="form-group">
+          <label>Current Password</label>
+          <input type="password" id="currentPass" class="form-control" placeholder="Enter current password" required />
+        </div>
+        <div class="form-group">
+          <label>New Username</label>
+          <input type="text" id="newUsername" class="form-control" placeholder="Enter new username" required />
+        </div>
+        <div class="form-group">
+          <label>New Password</label>
+          <input type="password" id="newPass" class="form-control" placeholder="Enter new password" required />
+        </div>
+        <div class="form-group">
+          <label>Confirm New Password</label>
+          <input type="password" id="confirmNewPass" class="form-control" placeholder="Confirm new password" required />
+        </div>
+        <button type="submit" class="btn-custom" style="width: 100%; justify-content: center; margin-top: 10px;">Update Credentials</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Backend Engine -->
+  <script>
+    const defaultJobs = [
+      {
+        title: "Business Development Officer",
+        company: "Dynamic Host BD | Faridpur, Bangladesh",
+        duration: "July 2026 – Present",
+        responsibilities: [
+          "Develop and maintain relationships with educational institutions, schools, colleges, and other potential clients to promote software and digital solutions.",
+          "Identify new business opportunities through field visits, client meetings, phone calls, and digital marketing activities.",
+          "Promote and demonstrate Education Management Software (EMS/ERP), school websites, online result publishing, attendance management, payment solutions, and related services.",
+          "Conduct client presentations, understand institutional requirements, prepare proposals, and support the sales and onboarding process.",
+          "Coordinate with technical and management teams to ensure smooth implementation, training, and customer support.",
+          "Maintain client databases, follow up with prospective and existing clients, and prepare regular sales and activity reports.",
+          "Support customer relationship management and contribute to achieving business development and revenue targets."
+        ]
+      },
+      {
+        title: "Admin & Accounts Officer",
+        company: "Mughal Restora & Biriyani Ghar | Rajbari, Bangladesh",
+        duration: "September 2023 – October 2025",
+        responsibilities: [
+          "Managed procurement, supplier coordination, inventory control, and daily administrative operations.",
+          "Maintained purchase, sales, expense, cash, and stock records with accuracy and proper documentation.",
+          "Prepared financial statements, salary sheets, expense reports, and regular management reports.",
+          "Supervised staff performance, attendance, and day-to-day operational activities.",
+          "Managed social media content, monitored page performance and analytics, and supported promotional activities.",
+          "Coordinated with suppliers and internal teams to ensure timely procurement and uninterrupted business operations."
+        ]
+      },
+      {
+        title: "Technical Support",
+        company: "Election Commission, Rajbari | Rajbari, Bangladesh",
+        duration: "May 2022 – November 2022",
+        responsibilities: [
+          "Provided comprehensive technical support for workstation and bio-enrollment client configuration.",
+          "Performed accurate data entry, data verification, proofreading, and quality control activities.",
+          "Facilitated data import and export while maintaining data accuracy and integrity.",
+          "Managed data administration, conducted basic data analysis, and prepared operational reports.",
+          "Provided technical assistance to the District Election Commission Officer and relevant staff."
+        ]
+      },
+      {
+        title: "Outlet Manager",
+        company: "Pran RFL Group (Daily Shopping) | Dhaka, Bangladesh",
+        duration: "January 2020 – April 2022",
+        responsibilities: [
+          "Managed daily outlet operations, cash handling, inventory control, sales transactions, and customer service.",
+          "Maintained purchase, sales, stock, and financial records using SAP and EPS.",
+          "Verified invoices, reconciled payments, and maintained purchase and financial documentation.",
+          "Supervised product receiving, stock movement, inventory accuracy, and staff activities.",
+          "Coordinated returns and replacements for damaged or defective products with relevant teams and suppliers.",
+          "Ensured smooth day-to-day outlet operations and compliance with established procedures."
+        ]
+      },
+      {
+        title: "Back Store Manager (BSM)",
+        company: "ACI Logistics Ltd (Shwapno) | Dhaka, Bangladesh",
+        duration: "September 2017 – September 2019",
+        responsibilities: [
+          "Managed back-store operations, inventory, stock receiving, storage, transfers, and product movement.",
+          "Maintained accurate stock records and performed regular inventory verification and reconciliation.",
+          "Conducted data entry and updated inventory information using SAP and EPS.",
+          "Verified invoices, purchase documents, and stock-related records.",
+          "Coordinated product receiving, storage, stock transfer, and returns of damaged products.",
+          "Supported store operations by ensuring timely product availability and accurate documentation."
+        ]
+      },
+      {
+        title: "Data Management Officer",
+        company: "Banglalink Digital Communications Ltd | Dhaka, Bangladesh",
+        duration: "September 2015 – January 2017",
+        responsibilities: [
+          "Managed databases and updated customer information while maintaining data accuracy, consistency, and integrity.",
+          "Performed data quality checks and implemented quality control procedures to minimize errors.",
+          "Coordinated with relevant teams to identify data requirements and improve data management processes.",
+          "Supported database development, data administration, and management reporting activities.",
+          "Assisted in establishing data management procedures and ensuring compliance with organizational policies.",
+          "Provided technical support for software applications and data-related operational requirements."
+        ]
+      },
+      {
+        title: "Point of Sales (POS)",
+        company: "ACI Logistics Ltd (Shwapno) | Dhaka, Bangladesh",
+        duration: "February 2014 – September 2015",
+        responsibilities: [
+          "Provided customer service by understanding customer requirements and assisting with purchases.",
+          "Operated POS systems to process sales transactions, payments, and customer purchases accurately.",
+          "Updated customer records and maintained transaction-related information.",
+          "Calculated sales prices, processed cash and card payments, and ensured accurate billing.",
+          "Operated integrated card payment terminals for real-time transaction authorization and settlement.",
+          "Supported daily sales operations and maintained an efficient checkout process."
+        ]
+      }
+    ];
+
+    const defaultProfile = {
+      name: "ELIAS HOSSAIN",
+      role: "Business Development Officer @ Dynamic Host BD",
+      phone: "+8801755122965",
+      email: "d029elias@gmail.com",
+      address: "Village: Shawrail, P.O: Bishoi Shawrail, P.S: Kalukhali, Dist: Rajbari",
+      photo: "Elias Hossain 2021.jpg",
+      summary: "Business development and operations professional with 10+ years of experience across sales, retail operations, inventory management, data management, technical support, administration, and accounts. Currently focused on business development for education technology and digital solutions, including client acquisition, relationship management, product demonstrations, proposals, onboarding, and customer support. Strong background in SAP/EPS, MS Excel, Google Sheets, ERP, reporting, data quality, team supervision, and process coordination. Known for accuracy, client-focused communication, operational discipline, and effective cross-functional coordination."
+    };
+
+    // Credentials Management
+    function getStoredCredentials() {
+      const data = localStorage.getItem("elias_admin_creds");
+      return data ? JSON.parse(data) : { username: "admin", password: "admin123" };
+    }
+
+    function setStoredCredentials(creds) {
+      localStorage.setItem("elias_admin_creds", JSON.stringify(creds));
+    }
+
+    function getStoredJobs() {
+      const data = localStorage.getItem("elias_portfolio_jobs");
+      return data ? JSON.parse(data) : defaultJobs;
+    }
+
+    function setStoredJobs(jobs) {
+      localStorage.setItem("elias_portfolio_jobs", JSON.stringify(jobs));
+    }
+
+    function getStoredProfile() {
+      const data = localStorage.getItem("elias_portfolio_profile");
+      return data ? JSON.parse(data) : defaultProfile;
+    }
+
+    function setStoredProfile(profile) {
+      try {
+        localStorage.setItem("elias_portfolio_profile", JSON.stringify(profile));
+      } catch (err) {
+        console.error("Storage error:", err);
+      }
+    }
+
+    function renderProfile() {
+      const p = getStoredProfile();
+      document.getElementById("displayHeroName").innerText = p.name;
+      document.getElementById("displayNameCard").innerText = p.name;
+      document.getElementById("displayContactName").innerText = p.name;
+      document.getElementById("displayHeroTitle").innerText = p.role;
+      document.getElementById("displayRoleCard").innerText = p.role;
+      document.getElementById("displayHeroSummary").innerText = p.summary;
+      document.getElementById("displayPhone").innerText = p.phone;
+      document.getElementById("phoneLink").href = `tel:${p.phone.replace(/[^0-9+]/g, '')}`;
+      document.getElementById("displayEmail").innerText = p.email;
+      document.getElementById("mailLink").href = `mailto:${p.email}`;
+      document.getElementById("displayAddress").innerText = p.address;
+      if (p.photo) {
+        document.getElementById("profilePhoto").src = p.photo;
+      }
+    }
+
+    function renderJobs() {
+      const jobs = getStoredJobs();
+      const container = document.getElementById("experienceTimeline");
+      container.innerHTML = "";
+
+      jobs.forEach((job, index) => {
+        const item = document.createElement("div");
+        item.className = "timeline-item";
+
+        const bulletsHtml = job.responsibilities.map(r => `<li>${r.replace(/^●|\*/g, '').trim()}</li>`).join("");
+
+        item.innerHTML = `
+          <div class="timeline-content">
+            <div class="crud-item-btns">
+              <button class="btn-action-small" onclick="openEditJobModal(${index})"><i class="fas fa-edit"></i> Edit</button>
+              <button class="btn-action-small btn-del" onclick="deleteJob(${index})"><i class="fas fa-trash"></i> Delete</button>
+            </div>
+            <div class="timeline-header">
+              <h4>${job.title}</h4>
+              <span class="badge">${job.duration}</span>
+            </div>
+            <div class="timeline-company">${job.company}</div>
+            <ul class="timeline-bullets">
+              ${bulletsHtml}
+            </ul>
+          </div>
+        `;
+        container.appendChild(item);
+      });
+    }
+
+    function checkLoginStatus() {
+      const loggedIn = sessionStorage.getItem("elias_admin_auth") === "true";
+      if (loggedIn) {
+        document.body.classList.add("body-admin-logged-in");
+        document.getElementById("loginBtn").style.display = "none";
+      } else {
+        document.body.classList.remove("body-admin-logged-in");
+        document.getElementById("loginBtn").style.display = "inline-flex";
+      }
+    }
+
+    function handleLogin(e) {
+      e.preventDefault();
+      const user = document.getElementById("adminUser").value.trim();
+      const pass = document.getElementById("adminPass").value.trim();
+      const creds = getStoredCredentials();
+
+      if (user === creds.username && pass === creds.password) {
+        sessionStorage.setItem("elias_admin_auth", "true");
+        closeModal("loginModal");
+        checkLoginStatus();
+        alert("Login Successful!");
+      } else {
+        alert("Invalid Username or Password!");
+      }
+    }
+
+    function logoutAdmin() {
+      sessionStorage.removeItem("elias_admin_auth");
+      checkLoginStatus();
+      alert("Logged out successfully.");
+    }
+
+    function openModal(id) {
+      document.getElementById(id).classList.add("active");
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.remove("active");
+    }
+    function openLoginModal() {
+      openModal("loginModal");
+    }
+
+    function openCredsModal() {
+      const creds = getStoredCredentials();
+      document.getElementById("currentPass").value = "";
+      document.getElementById("newUsername").value = creds.username;
+      document.getElementById("newPass").value = "";
+      document.getElementById("confirmNewPass").value = "";
+      openModal("credsModal");
+    }
+
+    function saveCredentials(e) {
+      e.preventDefault();
+      const currentPass = document.getElementById("currentPass").value.trim();
+      const newUsername = document.getElementById("newUsername").value.trim();
+      const newPass = document.getElementById("newPass").value.trim();
+      const confirmNewPass = document.getElementById("confirmNewPass").value.trim();
+
+      const creds = getStoredCredentials();
+
+      if (currentPass !== creds.password) {
+        alert("Current password mileni! Doya kore shothik password din.");
+        return;
+      }
+
+      if (newPass.length < 4) {
+        alert("Password ontoto 4 ta character hote hobe.");
+        return;
+      }
+
+      if (newPass !== confirmNewPass) {
+        alert("New Password ebong Confirm New Password match korche nah!");
+        return;
+      }
+
+      setStoredCredentials({ username: newUsername, password: newPass });
+      closeModal("credsModal");
+      alert("Username ebong Password shofolbhabe update hoyeche!");
+    }
+
+    function openProfileModal() {
+      const p = getStoredProfile();
+      document.getElementById("inputName").value = p.name;
+      document.getElementById("inputRole").value = p.role;
+      document.getElementById("inputPhone").value = p.phone;
+      document.getElementById("inputEmail").value = p.email;
+      document.getElementById("inputAddress").value = p.address;
+      document.getElementById("inputSummary").value = p.summary;
+      document.getElementById("inputPhotoUrl").value = p.photo;
+      document.getElementById("previewBox").style.display = "none";
+      openModal("profileModal");
+    }
+
+    function handleImageCompressAndLoad(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const img = new Image();
+        img.onload = function() {
+          const canvas = document.createElement("canvas");
+          const MAX_WIDTH = 600;
+          const MAX_HEIGHT = 600;
+          let width = img.width;
+          let height = img.height;
+
+          if (width > height) {
+            if (width > MAX_WIDTH) {
+              height *= MAX_WIDTH / width;
+              width = MAX_WIDTH;
+            }
+          } else {
+            if (height > MAX_HEIGHT) {
+              width *= MAX_HEIGHT / height;
+              height = MAX_HEIGHT;
+            }
+          }
+
+          canvas.width = width;
+          canvas.height = height;
+          const ctx = canvas.getContext("2d");
+          ctx.drawImage(img, 0, 0, width, height);
+
+          const optimizedDataUrl = canvas.toDataURL("image/jpeg", 0.82);
+
+          document.getElementById("inputPhotoUrl").value = optimizedDataUrl;
+          document.getElementById("previewImgElement").src = optimizedDataUrl;
+          document.getElementById("previewBox").style.display = "flex";
+        };
+        img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function saveProfileChanges(e) {
+      e.preventDefault();
+      const updated = {
+        name: document.getElementById("inputName").value.trim(),
+        role: document.getElementById("inputRole").value.trim(),
+        phone: document.getElementById("inputPhone").value.trim(),
+        email: document.getElementById("inputEmail").value.trim(),
+        address: document.getElementById("inputAddress").value.trim(),
+        summary: document.getElementById("inputSummary").value.trim(),
+        photo: document.getElementById("inputPhotoUrl").value.trim() || "Elias Hossain 2021.jpg"
+      };
+
+      setStoredProfile(updated);
+      renderProfile();
+      closeModal("profileModal");
+      alert("Profile and photo updated successfully!");
+    }
+
+    function openAddJobModal() {
+      document.getElementById("jobModalTitle").innerHTML = '<i class="fas fa-plus" style="color: var(--primary);"></i> Add Experience';
+      document.getElementById("jobEditIndex").value = "-1";
+      document.getElementById("jobDesignation").value = "";
+      document.getElementById("jobCompany").value = "";
+      document.getElementById("jobDuration").value = "";
+      document.getElementById("jobResponsibilities").value = "";
+      openModal("jobModal");
+    }
+
+    function openEditJobModal(index) {
+      const jobs = getStoredJobs();
+      const job = jobs[index];
+      document.getElementById("jobModalTitle").innerHTML = '<i class="fas fa-edit" style="color: var(--primary);"></i> Edit Experience';
+      document.getElementById("jobEditIndex").value = index;
+      document.getElementById("jobDesignation").value = job.title;
+      document.getElementById("jobCompany").value = job.company;
+      document.getElementById("jobDuration").value = job.duration;
+      document.getElementById("jobResponsibilities").value = job.responsibilities.join("\n");
+      openModal("jobModal");
+    }
+
+    function saveJobChanges(e) {
+      e.preventDefault();
+      const index = parseInt(document.getElementById("jobEditIndex").value);
+      const jobs = getStoredJobs();
+
+      const lines = document.getElementById("jobResponsibilities").value
+        .split("\n")
+        .map(line => line.trim())
+        .filter(line => line.length > 0);
+
+      const jobData = {
+        title: document.getElementById("jobDesignation").value.trim(),
+        company: document.getElementById("jobCompany").value.trim(),
+        duration: document.getElementById("jobDuration").value.trim(),
+        responsibilities: lines
+      };
+
+      if (index >= 0) {
+        jobs[index] = jobData;
+      } else {
+        jobs.unshift(jobData);
+      }
+
+      setStoredJobs(jobs);
+      renderJobs();
+      closeModal("jobModal");
+      alert("Job experience saved successfully!");
+    }
+
+    function deleteJob(index) {
+      if (confirm("Are you sure you want to delete this job experience?")) {
+        const jobs = getStoredJobs();
+        jobs.splice(index, 1);
+        setStoredJobs(jobs);
+        renderJobs();
+      }
+    }
+
+    function openTab(evt, tabId) {
+      const panes = document.getElementsByClassName("tab-pane");
+      for (let i = 0; i < panes.length; i++) panes[i].classList.remove("active");
+      const buttons = document.getElementsByClassName("tab-btn");
+      for (let i = 0; i < buttons.length; i++) buttons[i].classList.remove("active");
+      document.getElementById(tabId).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+
+    window.onload = function() {
+      renderProfile();
+      renderJobs();
+      checkLoginStatus();
+    };
+  </script>
+</body>
+</html>
